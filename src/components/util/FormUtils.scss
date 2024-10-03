@@ -1,0 +1,36 @@
+$DARK_GREEN_2: #4d8056;
+$DARK_GREEN_1: #6bb278;
+$GREEN: #b2ffc0;
+$LIGHT_GREEN_1: #c9ffd3;
+$DARK_PINK: #b2979c;
+$PINK: #ffb2c0;
+
+.empty-text {
+  padding: 12px 10px 12px 10px;
+  text-align: center;
+  background-color: $LIGHT_GREEN_1;
+  color: $DARK_GREEN_2;
+  border: dashed $DARK_GREEN_1 3px;
+  border-radius: 10px;
+}
+
+.list-editor_container {
+  .form-feedback {
+    display: block;
+  }
+  .add-text-btn {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.json-array-editor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 25px;
+
+  .title {
+    width: 100%;
+  }
+}

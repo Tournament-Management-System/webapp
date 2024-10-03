@@ -1,0 +1,15 @@
+.competitor-row:hover {
+  cursor: pointer;
+}
+
+.competitor-editor_modal-container {
+  display: flex;
+  justify-content: center;
+  .competitor-editor_minimum-width {
+    min-width: 650px;
+  }
+
+  .competitor-editor_bottom-padding {
+    margin-top: 50px;
+  }
+}

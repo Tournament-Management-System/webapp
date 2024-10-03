@@ -1,0 +1,87 @@
+type Competitor @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  competitorEntries: [CompetitorEntry] @manyToMany(relationName: "CompetitorCompetitorEntry")
+}
+
+type CompetitorEntry @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  competitors: [Competitor] @manyToMany(relationName: "CompetitorCompetitorEntry")
+  tournamentFormatId: ID! @index(name: "byTournamentFormat")
+  eventFormatIds: ID
+}
+
+type Judge @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  tournamentFormats: [TournamentFormat] @manyToMany(relationName: "JudgeTournamentFormat")
+}
+
+type Room @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  status: String
+  venueId: String
+  competitorEntryIds: [String]
+  judges: [String]
+}
+
+type Venue @model @auth(rules: [{allow: public}, {allow: owner}, {allow: private, operations: [read]}]) {
+  id: ID!
+  name: String
+  venueType: String
+  rooms: [String]
+  address: String
+}
+
+type EventFormat @model @auth(rules: [{allow: public}, {allow: owner}, {allow: private, operations: [read]}]) {
+  id: ID!
+  awards: [AWSJSON]
+  rounds: [AWSJSON]
+  name: String
+}
+
+type RoundState @model @auth(rules: [{allow: public}, {allow: private, operations: [read]}]) {
+  id: ID!
+  queued: [AWSJSON]
+  started: [AWSJSON]
+  completed: [AWSJSON]
+  assigned: [AWSJSON]
+  tournamentFormatId: ID
+  tournamentStateId: ID
+  eventFormatId: ID
+  eventStateId: ID! @index(name: "byEventState")
+}
+
+type EventState @model @auth(rules: [{allow: public}, {allow: private, operations: [read]}]) {
+  id: ID!
+  tournamentFormatId: ID
+  eventFormatId: ID
+  awards: [AWSJSON]
+  currentRoundIdx: Int
+  tournamentStateId: ID! @index(name: "byTournamentState")
+  roundState: [RoundState] @hasMany(indexName: "byEventState", fields: ["id"])
+}
+
+type TournamentState @model @auth(rules: [{allow: public}, {allow: private, operations: [read]}]) {
+  id: ID!
+  tournamentFormatId: ID
+  eventFormatIds: [ID]
+  competitors: AWSJSON
+  judges: AWSJSON
+  eventState: [EventState] @hasMany(indexName: "byTournamentState", fields: ["id"])
+  rooms: AWSJSON
+}
+
+type TournamentFormat @model @auth(rules: [{allow: public}, {allow: owner}, {allow: private, operations: [read]}]) {
+  id: ID!
+  name: String
+  description: String
+  startTime: AWSDateTime
+  eventFee: Float
+  eventFormatIds: [ID]
+  venueId: ID
+  tournamentState: TournamentState @hasOne
+  competitionEntries: [CompetitorEntry] @hasMany(indexName: "byTournamentFormat", fields: ["id"])
+  judges: [Judge] @manyToMany(relationName: "JudgeTournamentFormat")
+}
+ 

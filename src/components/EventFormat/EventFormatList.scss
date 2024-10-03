@@ -1,0 +1,18 @@
+.event-format-row:hover {
+  cursor: pointer;
+}
+
+.event-format-editor_modal-container {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+
+  .event-format-editor_minimum-width {
+    max-width: 650px;
+  }
+
+  .event-format-editor_bottom-padding {
+    margin-top: 50px;
+  }
+}

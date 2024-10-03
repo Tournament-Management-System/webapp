@@ -1,0 +1,19 @@
+.judge_row:hover {
+  cursor: pointer;
+}
+
+.judge-editor_modal-container {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+
+  .judge-editor_minimum-width {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .judge-editor_bottom-padding {
+    margin-top: 50px;
+  }
+}
