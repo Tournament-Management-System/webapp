@@ -1,6 +1,6 @@
 # Tournament Management System (TMS)
 
-## 👥 Team
+## Team
 
 This project was developed as part of Master of Science (M.S.) in Software Engineering degree for the CMPE-295A/B Master Project I & II course at San Jose State University, under the guidance of Professor Seshadri Srinivasan. The team members who contributed to the development of this project are as follows:
 
@@ -13,7 +13,7 @@ Each team member has played a pivotal role in the development and success of TMS
 
 ## Table of Contents
 
-- [Team](#👥-team)
+- [Team](#team)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Architecture](#architecture)
@@ -45,7 +45,7 @@ Each team member has played a pivotal role in the development and success of TMS
 
 Whether you're organizing a local gaming event or a large-scale competitive tournament, TMS provides the tools you need to manage competitors, judges, venues, and event formats seamlessly.
 
-## 🌟 Features
+## Features
 
 - **Automated Competitor Enrollment**: Streamline the process of registering and managing competitors.
 - **Dynamic Bracket Assignment**: Automatically create and assign competition brackets based on predefined formats.
@@ -64,7 +64,7 @@ Whether you're organizing a local gaming event or a large-scale competitive tour
 - **State Management**: Efficient state management using Redux Toolkit.
 - **Code Quality Tools**: Enforced code quality with ESLint and Prettier.
 
-## 🏗️ Architecture
+## Architecture
 
 ### Architecture Diagram
 
@@ -81,7 +81,7 @@ TMS leverages a serverless architecture using AWS services to ensure scalability
 - **Database**: AWS DynamoDB serves as the primary database, offering fast and flexible NoSQL data storage.
 - **CI/CD**: GitHub Actions automates the build, test, and deployment processes, ensuring continuous integration and delivery.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**:
   - [React](https://reactjs.org/)
@@ -106,13 +106,13 @@ TMS leverages a serverless architecture using AWS services to ensure scalability
   - [Bootstrap](https://getbootstrap.com/)
   - [Sass](https://sass-lang.com/)
 
-## 📺 Demo
+## Demo
 
 ![TMS Demo](public/demo-screenshot.png)
 
 *Screenshot showcasing the TMS dashboard and tournament management interface.*
 
-## 🏁 Getting Started
+## Getting Started
 
 Follow these instructions to set up and run the project locally.
 
@@ -294,6 +294,8 @@ The project uses the following dependencies and devDependencies:
 
 The project utilizes **GitHub Actions** for continuous integration, ensuring code quality and reliability through automated workflows.
 
+The **GitHub Actions** workflow ensures that every push or pull request to the `main` or `dev` branches triggers automated processes including:
+
 - **Workflow Configuration**: Located at `.github/workflows/node.js.yml`.
 - **Key Steps**:
   1. **Checkout Code**: Uses `actions/checkout@v3` to clone the repository.
@@ -301,10 +303,6 @@ The project utilizes **GitHub Actions** for continuous integration, ensuring cod
   3. **Install Dependencies**: Runs `yarn install --frozen-lock` to install dependencies based on the lock file.
   4. **Linting**: Executes `yarn lint` to enforce code formatting standards.
   5. **Testing**: Runs `yarn test` to execute the test suite.
-
-### Amplify Hosting
-
-For production deployments, **AWS Amplify Hosting** can be integrated to automatically deploy the application upon successful builds. Configuration details can be managed via the Amplify Console.
 
 ## Testing
 
@@ -413,7 +411,7 @@ To ensure that code is linted and formatted before commits, integrate **Husky** 
    }
    ```
 
-## 🛡️ Security
+## Security
 
 Ensuring the security of the application and its users is a top priority.
 
@@ -436,29 +434,17 @@ Ensuring the security of the application and its users is a top priority.
 
 Conduct periodic security reviews and audits to identify and mitigate potential vulnerabilities.
 
-## 🚀 Deployment
+## Deployment
 
-### AWS Amplify
+### AWS Amplify Hosting
 
 Deployment of the frontend web app is managed automatically by Amplify Deploy. Amplify handles hosting, build, and deployment processes, ensuring that the latest code changes are reflected in the live application seamlessly.
-
-### CI/CD Pipeline
-
-The **GitHub Actions** workflow ensures that every push or pull request to the `main` or `dev` branches triggers automated processes including:
-
-1. **Code Checkout**
-2. **Node.js Setup**
-3. **Dependency Installation**
-4. **Linting**
-5. **Testing**
-
-Successful workflows can be configured to automatically deploy to AWS Amplify Hosting, ensuring that only code that passes all checks is deployed.
 
 ### Monitoring and Operations
 
 - **AWS CloudWatch**: Utilized for monitoring application performance and capturing logs. CloudWatch alerts notify the team of any errors or anomalies in real-time.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -502,7 +488,7 @@ Contributions are what make the open-source community such an amazing place to l
 
    Navigate to the original repository and click **New Pull Request**. Provide a clear description of your changes and submit the pull request.
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 We would like to express our gratitude to:
 
