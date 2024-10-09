@@ -2,8 +2,6 @@
 
 ## Team
 
-This project was developed as part of Master of Science (M.S.) in Software Engineering degree for the CMPE-295A/B Master Project I & II course at San Jose State University, under the guidance of Professor Seshadri Srinivasan. The team members who contributed to the development of this project are as follows:
-
 - **Bryan Kwong**
 - **Fuyu Zhang**
 - **Patrick Daniel Bustos**
@@ -43,26 +41,16 @@ Each team member has played a pivotal role in the development and success of TMS
 
 **TMS** is a cutting-edge web application designed to streamline tournament management. Leveraging the power of **React** for the frontend and **AWS Amplify** for the backend, TMS offers a robust, scalable, and secure platform for organizing and managing various tournament formats, states, and venues.
 
-Whether you're organizing a local gaming event or a large-scale competitive tournament, TMS provides the tools you need to manage competitors, judges, venues, and event formats seamlessly.
+Whether you're organizing a local speech and debate tournament or a large-scale competitive tournament, TMS provides the tools you need to manage competitors, judges, venues, and event formats seamlessly.
 
 ## Features
 
 - **Automated Competitor Enrollment**: Streamline the process of registering and managing competitors.
+- **User Roles and Permissions**: Different access levels for organizers, competitors, and judges.
 - **Dynamic Bracket Assignment**: Automatically create and assign competition brackets based on predefined formats.
-- **Dynamic Tournament Management**: Create and update various tournament formats and states with ease.
-- **Comprehensive Venue Handling**: Manage multiple venues, rooms, and associated details.
 - **Judging and Scoring Integration**: Collect and tabulate judges’ decisions seamlessly.
 - **Real-time Tournament Tracking**: Monitor the progress of tournaments in real-time with up-to-date information.
-- **Real-time Data Operations**: Utilize AWS AppSync and DataStore for real-time data querying and mutations.
-- **User Authentication**: Secure user authentication using AWS Cognito with support for API Key and IAM.
-- **User Roles and Permissions**: Different access levels for organizers, competitors, and judges.
-- **Responsive Design**: Built with React Bootstrap for a responsive and intuitive user interface.
-- **Scalable Architecture**: Designed to handle tournaments of any size with high efficiency.
-- **Secure and Reliable**: Built on AWS Amplify, ensuring data security and reliability.
-- **Automated CI/CD**: Integrated GitHub Actions workflows for continuous integration and deployment.
-- **Robust Validation**: Comprehensive form validation to ensure data integrity.
-- **State Management**: Efficient state management using Redux Toolkit.
-- **Code Quality Tools**: Enforced code quality with ESLint and Prettier.
+- **Venue Handling**: Manage multiple venues, rooms, and associated details.
 
 ## Architecture
 
@@ -105,6 +93,17 @@ TMS leverages a serverless architecture using AWS services to ensure scalability
 - **Others**:
   - [Bootstrap](https://getbootstrap.com/)
   - [Sass](https://sass-lang.com/)
+
+- **Automated CI/CD**: Integrated GitHub Actions workflows for continuous integration and deployment.
+- **Code Quality Tools**: Enforced code quality with ESLint and Prettier.
+- **Dynamic Tournament Management**: Create and update various tournament formats and states with ease.
+- **Real-time Data Operations**: Utilize AWS AppSync and DataStore for real-time data querying and mutations.
+- **Responsive Design**: Built with React Bootstrap for a responsive and intuitive user interface.
+- **Robust Validation**: Comprehensive form validation to ensure data integrity.
+- **Scalable Architecture**: Designed to handle tournaments of any size with high efficiency.
+- **Secure and Reliable**: Built on AWS Amplify, ensuring data security and reliability.
+- **State Management**: Efficient state management using Redux Toolkit.
+- **User Authentication**: Secure user authentication using AWS Cognito with support for API Key and IAM.
 
 ## Demo
 
