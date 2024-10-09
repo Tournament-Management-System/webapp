@@ -19,6 +19,7 @@ Each team member has played a pivotal role in the development and success of TMS
   - [Architectural Overview](#architectural-overview)
 - [Tech Stack](#tech-stack)
 - [Demo](#demo)
+- [Outline](#outline)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -94,6 +95,14 @@ TMS leverages a serverless architecture using AWS services to ensure scalability
   - [Bootstrap](https://getbootstrap.com/)
   - [Sass](https://sass-lang.com/)
 
+## Demo
+
+![TMS Demo](public/demo-screenshot.png)
+
+*Screenshot showcasing the TMS dashboard and tournament management interface.*
+
+## Outline
+
 - **Automated CI/CD**: Integrated GitHub Actions workflows for continuous integration and deployment.
 - **Code Quality Tools**: Enforced code quality with ESLint and Prettier.
 - **Dynamic Tournament Management**: Create and update various tournament formats and states with ease.
@@ -104,12 +113,6 @@ TMS leverages a serverless architecture using AWS services to ensure scalability
 - **Secure and Reliable**: Built on AWS Amplify, ensuring data security and reliability.
 - **State Management**: Efficient state management using Redux Toolkit.
 - **User Authentication**: Secure user authentication using AWS Cognito with support for API Key and IAM.
-
-## Demo
-
-![TMS Demo](public/demo-screenshot.png)
-
-*Screenshot showcasing the TMS dashboard and tournament management interface.*
 
 ## Getting Started
 
