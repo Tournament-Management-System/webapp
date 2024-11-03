@@ -101,10 +101,6 @@ Check out this short video demonstration to see TMS in action:
 
 [![TMS Demo Video](https://img.youtube.com/vi/vi9HMi2dkiM/0.jpg)](https://youtu.be/vi9HMi2dkiM)
 
-![TMS Demo](public/demo-screenshot.png)
-
-*Screenshot showcasing the TMS dashboard and tournament management interface.*
-
 ## Outline
 
 - **Automated CI/CD**: Integrated GitHub Actions workflows for continuous integration and deployment.
