@@ -18,7 +18,7 @@ Each team member has played a pivotal role in the development and success of TMS
   - [Architecture Diagram](#architecture-diagram)
   - [Architectural Overview](#architectural-overview)
 - [Tech Stack](#tech-stack)
-- [Demo](#demo)
+- [Demo](#demo-video)
 - [Outline](#outline)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -95,7 +95,11 @@ TMS leverages a serverless architecture using AWS services to ensure scalability
   - [Bootstrap](https://getbootstrap.com/)
   - [Sass](https://sass-lang.com/)
 
-## Demo
+## Demo Video
+
+Check out this short video demonstration to see TMS in action:
+
+[![TMS Demo Video](https://img.youtube.com/vi/vi9HMi2dkiM/0.jpg)](https://youtu.be/vi9HMi2dkiM)
 
 ![TMS Demo](public/demo-screenshot.png)
 
